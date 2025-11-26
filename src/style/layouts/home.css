@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sedgwick+Ave+Display&display=swap');
+
+@keyframes hero-gradient-animation {
+  0% {
+    --x-0: 85%;
+    --s-start-0: 9%;
+    --s-end-0: 55%;
+    --y-0: 80%;
+    --c-0: hsla(266.99999999999983, 1%, 12%, 1);
+    --s-start-1: 5%;
+    --s-end-1: 72%;
+    --y-1: 24%;
+    --x-1: 60%;
+    --c-1: hsla(335.9999999999997, 2%, 22%, 1);
+    --s-start-2: 5%;
+    --s-end-2: 52%;
+    --y-2: 82%;
+    --c-2: hsla(271.9148936170212, 100%, 50%, 1);
+    --x-2: 13%;
+    --s-start-3: 13%;
+    --s-end-3: 68%;
+    --x-3: 24%;
+    --c-3: hsla(271.9148936170212, 99%, 53%, 1);
+    --y-3: 7%;
+  }
+
+  100% {
+    --x-0: 31%;
+    --s-start-0: 9%;
+    --s-end-0: 55%;
+    --y-0: 94%;
+    --c-0: hsla(266.99999999999943, 0%, 12%, 1);
+    --s-start-1: 5%;
+    --s-end-1: 72%;
+    --y-1: 25%;
+    --x-1: 2%;
+    --c-1: hsla(0, 4%, 19%, 1);
+    --s-start-2: 5%;
+    --s-end-2: 52%;
+    --y-2: 20%;
+    --c-2: hsla(271.9148936170212, 100%, 50%, 1);
+    --x-2: 98%;
+    --s-start-3: 13%;
+    --s-end-3: 68%;
+    --x-3: 95%;
+    --c-3: hsla(289.9038461538462, 86%, 47%, 1);
+    --y-3: 92%;
+  }
+}
+
+@property --x-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 85%
+}
+
+@property --s-start-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 9%
+}
+
+@property --s-end-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 55%
+}
+
+@property --y-0 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 80%
+}
+
+@property --c-0 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(266.99999999999983, 1%, 12%, 1)
+}
+
+@property --s-start-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 5%
+}
+
+@property --s-end-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 72%
+}
+
+@property --y-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 24%
+}
+
+@property --x-1 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 60%
+}
+
+@property --c-1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(335.9999999999997, 2%, 22%, 1)
+}
+
+@property --s-start-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 5%
+}
+
+@property --s-end-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 52%
+}
+
+@property --y-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 82%
+}
+
+@property --c-2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(271.9148936170212, 100%, 50%, 1)
+}
+
+@property --x-2 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 13%
+}
+
+@property --s-start-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 13%
+}
+
+@property --s-end-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 68%
+}
+
+@property --x-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 24%
+}
+
+@property --c-3 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: hsla(271.9148936170212, 99%, 53%, 1)
+}
+
+@property --y-3 {
+  syntax: '<percentage>';
+  inherits: false;
+  initial-value: 7%
+}
+
+.animacao {
+  --x-0: 85%;
+  --y-0: 80%;
+  --c-0: hsla(266.99999999999983, 1%, 12%, 1);
+  --y-1: 24%;
+  --x-1: 60%;
+  --c-1: hsla(266.99999999999983, 1%, 12%, 1);
+  --y-2: 82%;
+  --c-2: hsla(271.9148936170212, 100%, 50%, 1);
+  --x-2: 13%;
+  --x-3: 24%;
+  --c-3: hsla(271.9148936170212, 99%, 53%, 1);
+  --y-3: 7%;
+  ;
+  background-color: hsla(0, 0%, 0%, 1);
+  background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3));
+  animation: hero-gradient-animation 10s linear infinite alternate;
+  background-blend-mode: normal, normal, normal, normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+img {
+  height: 80px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.logo img {
+  width: 130px;
+  height: 130px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: hsla(266.99999999999983, 1%, 12%, 1);
+  height: 8vh;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.corpo {
+  margin: 20%;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  display: flex;
+
+}
+
+.corpo img {
+  width: 450px;
+  height: 450px;
+  margin-left: 15%;
+  margin-bottom: 0px;
+}
+
+.corpo h1 {
+  font-size: 60px;
+  font-family: "Oldenburg", serif;
+  font-weight: 800;
+
+}
+
+.corpo p {
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+.botao {
+  margin: 20%;
+  margin-top: 50px;
+
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+  width: 650px;
+
+}
+
+.btn-login {
+  background-color: hsla(271.9148936170212, 100%, 50%, 1);
+  ;
+  color: white;
+}
+
+.btn-login:hover {
+  background-color: rgba(136, 0, 255, 0.377);
+  transform: scale(1.15);
+}
+
+.btn-cadastro {
+  background-color: hsla(271.9148936170212, 100%, 50%, 1);
+  ;
+  color: white;
+}
+
+.btn-cadastro:hover {
+  background-color: rgba(136, 0, 255, 0.377);
+  transform: scale(1.15);
+}
+
+/*rgba(57, 0, 107, 0.966)*/
+.corpo02 {
+  background-color:rgb(22, 22, 22)  ;
+  display: block;
+}
+
+.corpo02 h1 {
+  font-size: 60px;
+  font-family: "Oldenburg", serif;
+  font-weight: 800;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+
+}
+
+.corpo02 p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  display:block ;
+
+}
+
+.corpo02 img {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+  margin-left: 35%;
+
+}
+
+.corpo03{
+  background-color: rgb(22, 22, 22);
+  display: flex;
+}
+
+
+.corpo03 h1 {
+  font-size: 60px;
+  font-family: "Oldenburg", serif;
+  font-weight: 800;
+  margin: 20%;
+  margin-top: 40px;
+  margin-left: 43%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+
+}
+
+.corpo03 p {
+  font-size: 18px;
+  margin: 1%;
+  margin-top: 0%;
+  margin-left: 43%;
+  margin-right: 0%;
+}
+
+.corpo03 img {
+  width: 450px;
+  height: 450px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+
+}
+
+.corpo04{
+  background-color: rgb(22, 22, 22);
+  display: flex;
+}
+
+.corpo04 h1{
+  font-size: 60px;
+  font-family: "Oldenburg", serif;
+  font-weight: 800;
+  margin: 20%;
+  margin-top: 55px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0px;
+
+}
+
+.corpo04 p{
+  font-size: 18px;
+  margin: 20%;
+  margin-top: 10px;
+  margin-left: 0%;
+  margin-right: 35%;
+  
+}
+
+.corpo04 img {
+  width: 450px;
+  height: 450px;
+  margin-left: 15%;
+  margin-right: 15%;
+ 
+
+}
+
+.corpo05{
+  background-color: rgb(22, 22, 22);
+
+}
+
+.corpo05 h1{
+  font-size: 60px;
+  font-family: "Oldenburg", serif;
+  font-weight: 800;
+  margin-left: 45%;
+  margin-top: 0%;
+
+
+}
+
+.espcard{
+  display: flex;
+  align-items: center;
+  margin-left: 18%;
+}
+
+.card{
+  background-color: rgb(22, 22, 22);
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(136, 0, 255, 0.377);
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+
+}
+
+.card img{
+  margin-top: 30px;
+}
+
+.card h2{
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 5px;
+ 
+}
+
+.card p{
+  margin: 15%;
+  margin-top: 15px;
+}
+
+/* prompi mobile */
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #b3b3d8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
