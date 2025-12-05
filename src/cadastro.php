@@ -31,7 +31,7 @@ function isActiveForm($formName, $activeForm){
 <head>
   <meta charset="UTF-8" />
   <title>Pagina Cadastro </title>
-  <link rel="stylesheet" href="style.css">
+  =<link rel="stylesheet" href=".css">
 </head>
 
 <body>

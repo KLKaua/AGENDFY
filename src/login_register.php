@@ -24,7 +24,7 @@ if(isset($_POST['register'])){// verifica se o botao de cadastro foi clicado
 
    //direciona usuario a pagina principal apos a conclusao do processo 
    // IMPLEMENTAR CAMINHO DO SITE DEPOIS
-   header("location:cadastro.php");
+   header("location:home.php");
    exit();
 }
 
@@ -64,9 +64,11 @@ if(isset($_POST['login'])){
    // caso senha e email incorreto gera mensagem 
    $_SESSION['login_error']= 'email e senha incorreto';
    $_SESSION['active_form']= 'login';
+   
 
    // direciona usuario para pogina principal 
-   header("Location:cadastro.php");
+   header("Location:home.php");
+   
    exit();
 
 }

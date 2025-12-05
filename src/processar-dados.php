@@ -9,11 +9,11 @@ $passaword  = $_POST['password'];
 $database = "user_bd";
 
 // //conectando banco de dados MysqlPHp com o projeto 
- $conn = new mysql($host, $nome, $email,$passaword,$database);
+ $conn = new mysqli($host, $nome, $email,$passaword,$database);
 
 // //verifica a conexao com o banco de dados
  if ($conn->connect_error){
     die ("falha ao se comunicar com banco de dados:".$conn->connection_erro);
  }
 
-?>
+?> 
